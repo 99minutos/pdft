@@ -431,7 +431,7 @@ func (i *PDFt) SetFont(name string, style string, size int) error {
 }
 
 // Get pdf in bytes
-func (i *PDFt) GetPdf(filepath string) ([]byte, error) {
+func (i *PDFt) GetPdf() ([]byte, error) {
 	var buff bytes.Buffer
 	err := i.SaveTo(&buff)
 	if err != nil {
